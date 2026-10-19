@@ -1,0 +1,16 @@
+{
+  ".url": {
+    "picoclaw.main": {
+      "title": "PicoClaw",
+      "icon": "images/icon_{0}.png",
+      "type": "iframe",
+      "protocol": "http",
+      "port": "18800",
+      "url": "/",
+      "allUsers": false,
+      "control": {
+        "accessPerm": "readonly"
+      }
+    }
+  }
+}

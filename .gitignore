@@ -74,3 +74,8 @@ docker/data
 
 .omc/
 .worktrees/
+
+# PicoClaw fnOS local build artifacts
+fnos/picoclaw/app/bin/picoclaw
+fnos/picoclaw/app/bin/picoclaw-launcher
+*.fpk

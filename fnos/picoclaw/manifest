@@ -1,0 +1,14 @@
+appname=picoclaw
+version=0.2.9
+display_name=PicoClaw
+desc=超轻量个人 AI 助手与 Web 控制台
+platform=x86
+source=thirdparty
+maintainer=PicoClaw contributors
+maintainer_url=https://github.com/sipeed/picoclaw
+distributor=PicoClaw contributors
+desktop_uidir=ui
+desktop_applaunchname=picoclaw.main
+service_port=18800
+checkport=true
+ctl_stop=true
