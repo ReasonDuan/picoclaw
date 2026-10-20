@@ -5,12 +5,18 @@ import (
 	"net"
 	"net/http"
 	"os"
+	"runtime"
 	"strings"
 	"sync/atomic"
 	"time"
 )
 
 func init() {
+	// Windows/macOS 等平台本来就没有 /etc/resolv.conf，使用系统 DNS 即可
+	if runtime.GOOS != "linux" && runtime.GOOS != "android" {
+		return
+	}
+
 	// 仅在 /etc/resolv.conf 不存在时才覆盖（即 Android 环境）
 	if _, err := os.Stat("/etc/resolv.conf"); err == nil {
 		return
